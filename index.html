@@ -1,12 +1,171 @@
 <html>
 	
 	<head>
+		<title>Test1 Coderhouse</title>
 		<meta charset="utf-8"/>
 		<meta name="description" content="Esto es una prueba de descripcion de mi sitio">
+
+		<style type="text/css"></style>
 		
 	</head>
+
 	<body>
+
+	 <a href="#formulario" title="ir a formulario">Ir a Formulario</a>
+	 <a href="http://www.google.com" target="blank_" title="ir a google">Ir a Google</a>
+	 <a href="#tabla" title="ir a tabla">Ir a Tabla</a>
+
+
+
+		<h1>Título de mi página</h1>
+		<h2>Subtítulo de mi página</h2>
+
+	<ol>
+		<li>Ordenado 1</li>
+		<li>Ordenado 2</li>
+	</ol>
+
+	<ul>
+		<li>Ordenado 3</li>
+		<li>Ordenado 5</li>
+	</ul>
+
+
+	<ol>
+		<li>
+			<ul>
+				<li>Lista 2</li>
+			</ul>
+		</li>
+		<li>Ordenado 2</li>
+	</ol>
+
+	<table id="tabla">
+		<thead>
+			<tr> <!-- table row -->
+				<th>w</th> <!-- th solo se ocupa cuando estamos dentro del thead -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>w</td> <!-- td solo se ocupa cuando estamos dentro del tbody -->
+			</tr>
+			
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>w</td> <!-- td solo se ocupa cuando estamos dentro del tfoot igual que en el tbody -->
+			</tr>
+		</tfoot>
+	</table>
+
+<!-- FORMULARIOS -->
+
+<!-- POST = Enviar información oculta, como un mail, contraseña, etc.
+GET = La información queda en la URL a la que va. -->
+
+<form id="formulario" action="test.php" method="POST">
+	<label for="nombre-completo">
+		Nombre Completo
+	</label>
+	<input type="text" name="nombre-completo" placeholder="Ej: Fran Junqueras" required>
+	<!-- Al input se le agrega required para validar el formulario antes de enviar -->
+	<!-- El name de los input no puede tener ni mayusculas ni caracteres especiales -->
+
+	<label for="password">
+		Password
+	</label>
+	<input type="password" name="password" required>
+
+	<label for="email">
+		Email
+	</label>
+	<input type="email" name="email" placeholder="Ej: hola@fran.cl" required>
+
+	<label>
+		¿De donde vienes?
+	</label>
+	<select>
+		<option value="1">Chile</option> <!-- Tiene que tener el atributo VALUE -->
+		<option value="2">Argentina</option>
+		<option value="3">Brasil</option>
+	</select>
+
+	<label>
+		Deseas recibir información
+	</label>
+	<input type="checkbox" name="informacion" checked="true">
+
+	<label>
+		Que color te gusta
+	</label>
+
+	<div>
+		Verde
+		<input type="radio" name="color" value="verde" checked="true">
+	</div>
+	
+	<div>
+		Amarillo
+		<input type="radio" name="color" value="amarillo">
+	</div>
+
+	<div>
+		Rojo
+		<input type="radio" name="color" value="rojo">
+	</div>
+
+	<input type="file">
+
+	<label>
+		Descripción
+	</label>
+	<textarea name="Descripción"></textarea>
+
+
+	<input type="reset" value="Borrar">
+	<input type="submit" value="Enviar Formulario">
+	
+	
+	
+</form>
+
+	<audio src="" autobuffer autoloop loop controls></audio>
+	<video src="algo.ogg" controls>
+		<source src="/media/video.oga">
+		<source src="/media/video.m4v">
+		<object type="video/ogg" data="/media/audio.wav" width="290" height="45">
+			<param name="src" value="">
+
+
+
+		</object>
+		
+
+	</video>
+
 		
 	</body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
